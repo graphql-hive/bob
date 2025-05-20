@@ -13,7 +13,7 @@
     "url": "https://github.com/kamilkisiela"
   },
   "license": "MIT",
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@10.11.0",
   "engines": {
     "node": ">=16",
     "pnpm": ">=8"
@@ -63,23 +63,23 @@
   },
   "devDependencies": {
     "@changesets/changelog-github": "0.5.1",
-    "@changesets/cli": "2.29.3",
+    "@changesets/cli": "2.29.4",
     "@theguild/prettier-config": "3.0.1",
     "@types/fs-extra": "11.0.4",
     "@types/js-yaml": "4.0.9",
     "@types/lodash.get": "4.4.9",
-    "@types/node": "22.15.14",
+    "@types/node": "22.15.19",
     "@types/yargs": "17.0.33",
-    "@typescript-eslint/parser": "8.32.0",
+    "@typescript-eslint/parser": "8.32.1",
     "cross-env": "7.0.3",
-    "eslint": "9.26.0",
+    "eslint": "9.27.0",
     "eslint-plugin-import": "2.31.0",
     "jest-resolve": "29.7.0",
     "jest-snapshot-serializer-raw": "2.0.0",
     "prettier": "3.5.3",
     "rimraf": "6.0.1",
     "typescript": "5.8.3",
-    "vitest": "3.1.3"
+    "vitest": "3.1.4"
   },
   "publishConfig": {
     "access": "public"
