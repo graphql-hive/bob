@@ -51,6 +51,9 @@ importers:
       '@changesets/cli':
         specifier: 2.29.4
         version: 2.29.4
+      '@ianvs/prettier-plugin-sort-imports':
+        specifier: 4.4.2
+        version: 4.4.2(prettier@3.5.3)
       '@theguild/prettier-config':
         specifier: 3.0.1
         version: 3.0.1(prettier@3.5.3)
@@ -90,6 +93,9 @@ importers:
       prettier:
         specifier: 3.5.3
         version: 3.5.3
+      prettier-plugin-pkg:
+        specifier: 0.19.1
+        version: 0.19.1(prettier@3.5.3)
       prettier-plugin-sh:
         specifier: 0.17.4
         version: 0.17.4(prettier@3.5.3)
@@ -416,6 +422,15 @@ packages:
     peerDependencies:
       '@vue/compiler-sfc': 2.7.x || 3.x
       prettier: 2 || 3
+    peerDependenciesMeta:
+      '@vue/compiler-sfc':
+        optional: true
+
+  '@ianvs/prettier-plugin-sort-imports@4.4.2':
+    resolution: {integrity: sha512-KkVFy3TLh0OFzimbZglMmORi+vL/i2OFhEs5M07R9w0IwWAGpsNNyE4CY/2u0YoMF5bawKC2+8/fUH60nnNtjw==}
+    peerDependencies:
+      '@vue/compiler-sfc': 2.7.x || 3.x
+      prettier: 2 || 3 || ^4.0.0-0
     peerDependenciesMeta:
       '@vue/compiler-sfc':
         optional: true
@@ -1808,6 +1823,12 @@ packages:
     peerDependencies:
       prettier: ^3.0.3
 
+  prettier-plugin-pkg@0.19.1:
+    resolution: {integrity: sha512-9x2USWidQHxzd6a1+ikVqIm1K9qNs3f+XoUvq9EChaSdkkFUxUnWU/4+2EGttFLDT9DK4d9CwCKGSNZC/EE98g==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      prettier: ^3.0.3
+
   prettier-plugin-sh@0.15.0:
     resolution: {integrity: sha512-U0PikJr/yr2bzzARl43qI0mApBj0C1xdAfA04AZa6LnvIKawXHhuy2fFo6LNA7weRzGlAiNbaEFfKMFo0nZr/A==}
     engines: {node: '>=16.0.0'}
@@ -2648,6 +2669,17 @@ snapshots:
   '@humanwhocodes/retry@0.4.3': {}
 
   '@ianvs/prettier-plugin-sort-imports@4.4.1(prettier@3.5.3)':
+    dependencies:
+      '@babel/generator': 7.27.5
+      '@babel/parser': 7.27.5
+      '@babel/traverse': 7.27.4
+      '@babel/types': 7.27.3
+      prettier: 3.5.3
+      semver: 7.7.2
+    transitivePeerDependencies:
+      - supports-color
+
+  '@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.5.3)':
     dependencies:
       '@babel/generator': 7.27.5
       '@babel/parser': 7.27.5
@@ -4155,6 +4187,10 @@ snapshots:
   prelude-ls@1.2.1: {}
 
   prettier-plugin-pkg@0.18.1(prettier@3.5.3):
+    dependencies:
+      prettier: 3.5.3
+
+  prettier-plugin-pkg@0.19.1(prettier@3.5.3):
     dependencies:
       prettier: 3.5.3
 
