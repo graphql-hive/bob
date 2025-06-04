@@ -5,6 +5,7 @@
     "node": ">= 14.0.0"
   },
   "main": "dist/esm/index.js",
+  "typings": "dist/typings/index.d.ts",
   "exports": {
     ".": {
       "require": {
@@ -36,7 +37,6 @@
     },
     "./package.json": "./package.json"
   },
-  "typings": "dist/typings/index.d.ts",
   "publishConfig": {
     "directory": "dist",
     "access": "public"

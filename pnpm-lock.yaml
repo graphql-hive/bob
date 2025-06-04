@@ -51,6 +51,9 @@ importers:
       '@changesets/cli':
         specifier: 2.29.4
         version: 2.29.4
+      '@ianvs/prettier-plugin-sort-imports':
+        specifier: 4.4.2
+        version: 4.4.2(prettier@3.5.3)
       '@theguild/prettier-config':
         specifier: 3.0.1
         version: 3.0.1(prettier@3.5.3)
@@ -90,6 +93,12 @@ importers:
       prettier:
         specifier: 3.5.3
         version: 3.5.3
+      prettier-plugin-pkg:
+        specifier: 0.19.1
+        version: 0.19.1(prettier@3.5.3)
+      prettier-plugin-sh:
+        specifier: 0.17.4
+        version: 0.17.4(prettier@3.5.3)
       rimraf:
         specifier: 6.0.1
         version: 6.0.1
@@ -417,6 +426,15 @@ packages:
       '@vue/compiler-sfc':
         optional: true
 
+  '@ianvs/prettier-plugin-sort-imports@4.4.2':
+    resolution: {integrity: sha512-KkVFy3TLh0OFzimbZglMmORi+vL/i2OFhEs5M07R9w0IwWAGpsNNyE4CY/2u0YoMF5bawKC2+8/fUH60nnNtjw==}
+    peerDependencies:
+      '@vue/compiler-sfc': 2.7.x || 3.x
+      prettier: 2 || 3 || ^4.0.0-0
+    peerDependenciesMeta:
+      '@vue/compiler-sfc':
+        optional: true
+
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
@@ -464,6 +482,10 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
+
+  '@reteps/dockerfmt@0.3.6':
+    resolution: {integrity: sha512-Tb5wIMvBf/nLejTQ61krK644/CEMB/cpiaIFXqGApfGqO3GwcR3qnI0DbmkFVCl2OyEp8LnLX3EkucoL0+tbFg==}
+    engines: {node: ^v12.20.0 || ^14.13.0 || >=16.0.0}
 
   '@rollup/rollup-android-arm-eabi@4.41.1':
     resolution: {integrity: sha512-NELNvyEWZ6R9QMkiytB4/L4zSEaBC03KIXEghptLGLZWJ6VPrL63ooZQCOnlx36aQPGhzuOMwDerC1Eb2VmrLw==}
@@ -1801,8 +1823,20 @@ packages:
     peerDependencies:
       prettier: ^3.0.3
 
+  prettier-plugin-pkg@0.19.1:
+    resolution: {integrity: sha512-9x2USWidQHxzd6a1+ikVqIm1K9qNs3f+XoUvq9EChaSdkkFUxUnWU/4+2EGttFLDT9DK4d9CwCKGSNZC/EE98g==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      prettier: ^3.0.3
+
   prettier-plugin-sh@0.15.0:
     resolution: {integrity: sha512-U0PikJr/yr2bzzARl43qI0mApBj0C1xdAfA04AZa6LnvIKawXHhuy2fFo6LNA7weRzGlAiNbaEFfKMFo0nZr/A==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      prettier: ^3.0.3
+
+  prettier-plugin-sh@0.17.4:
+    resolution: {integrity: sha512-aAVKXZ7GTEMZdZsIPSwMwddwPvt2ibMbRGd4OJAP0G7QoeYZV+mPNg2Oln3R53sZ4PVjeAA7Xzi/PuI0QlHHfQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       prettier: ^3.0.3
@@ -1925,6 +1959,10 @@ packages:
 
   sh-syntax@0.4.2:
     resolution: {integrity: sha512-/l2UZ5fhGZLVZa16XQM9/Vq/hezGGbdHeVEA01uWjOL1+7Ek/gt6FquW0iKKws4a9AYPYvlz6RyVvjh3JxOteg==}
+    engines: {node: '>=16.0.0'}
+
+  sh-syntax@0.5.8:
+    resolution: {integrity: sha512-JfVoxf4FxQI5qpsPbkHhZo+n6N9YMJobyl4oGEUBb/31oQYlgTjkXQD8PBiafS2UbWoxrTO0Z5PJUBXEPAG1Zw==}
     engines: {node: '>=16.0.0'}
 
   shebang-command@2.0.0:
@@ -2641,6 +2679,17 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.5.3)':
+    dependencies:
+      '@babel/generator': 7.27.5
+      '@babel/parser': 7.27.5
+      '@babel/traverse': 7.27.4
+      '@babel/types': 7.27.3
+      prettier: 3.5.3
+      semver: 7.7.2
+    transitivePeerDependencies:
+      - supports-color
+
   '@isaacs/cliui@8.0.2':
     dependencies:
       string-width: 5.1.2
@@ -2707,6 +2756,8 @@ snapshots:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
+
+  '@reteps/dockerfmt@0.3.6': {}
 
   '@rollup/rollup-android-arm-eabi@4.41.1':
     optional: true
@@ -4139,11 +4190,21 @@ snapshots:
     dependencies:
       prettier: 3.5.3
 
+  prettier-plugin-pkg@0.19.1(prettier@3.5.3):
+    dependencies:
+      prettier: 3.5.3
+
   prettier-plugin-sh@0.15.0(prettier@3.5.3):
     dependencies:
       mvdan-sh: 0.10.1
       prettier: 3.5.3
       sh-syntax: 0.4.2
+
+  prettier-plugin-sh@0.17.4(prettier@3.5.3):
+    dependencies:
+      '@reteps/dockerfmt': 0.3.6
+      prettier: 3.5.3
+      sh-syntax: 0.5.8
 
   prettier@2.8.8: {}
 
@@ -4293,6 +4354,10 @@ snapshots:
       es-object-atoms: 1.1.1
 
   sh-syntax@0.4.2:
+    dependencies:
+      tslib: 2.8.1
+
+  sh-syntax@0.5.8:
     dependencies:
       tslib: 2.8.1
 
