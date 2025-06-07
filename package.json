@@ -69,7 +69,7 @@
     "@types/fs-extra": "11.0.4",
     "@types/js-yaml": "4.0.9",
     "@types/lodash.get": "4.4.9",
-    "@types/node": "22.15.29",
+    "@types/node": "22.15.30",
     "@types/yargs": "17.0.33",
     "@typescript-eslint/parser": "8.33.1",
     "cross-env": "7.0.3",
@@ -78,11 +78,11 @@
     "jest-resolve": "29.7.0",
     "jest-snapshot-serializer-raw": "2.0.0",
     "prettier": "3.5.3",
-    "prettier-plugin-pkg": "0.19.1",
+    "prettier-plugin-pkg": "0.21.0",
     "prettier-plugin-sh": "0.17.4",
     "rimraf": "6.0.1",
     "typescript": "5.8.3",
-    "vitest": "3.2.1"
+    "vitest": "3.2.2"
   },
   "publishConfig": {
     "access": "public"
