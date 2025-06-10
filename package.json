@@ -75,7 +75,7 @@
     "cross-env": "7.0.3",
     "eslint": "9.28.0",
     "eslint-plugin-import": "2.31.0",
-    "jest-resolve": "29.7.0",
+    "jest-resolve": "30.0.0",
     "jest-snapshot-serializer-raw": "2.0.0",
     "prettier": "3.5.3",
     "prettier-plugin-pkg": "0.19.1",
