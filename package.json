@@ -13,7 +13,7 @@
     "url": "https://github.com/kamilkisiela"
   },
   "license": "MIT",
-  "packageManager": "pnpm@10.11.1",
+  "packageManager": "pnpm@10.13.1",
   "engines": {
     "node": ">=16",
     "pnpm": ">=8"
@@ -63,26 +63,26 @@
   },
   "devDependencies": {
     "@changesets/changelog-github": "0.5.1",
-    "@changesets/cli": "2.29.4",
-    "@ianvs/prettier-plugin-sort-imports": "4.4.2",
+    "@changesets/cli": "2.29.5",
+    "@ianvs/prettier-plugin-sort-imports": "4.5.1",
     "@theguild/prettier-config": "3.0.1",
     "@types/fs-extra": "11.0.4",
     "@types/js-yaml": "4.0.9",
     "@types/lodash.get": "4.4.9",
-    "@types/node": "22.15.29",
+    "@types/node": "22.16.5",
     "@types/yargs": "17.0.33",
-    "@typescript-eslint/parser": "8.33.1",
+    "@typescript-eslint/parser": "8.38.0",
     "cross-env": "7.0.3",
-    "eslint": "9.28.0",
-    "eslint-plugin-import": "2.31.0",
+    "eslint": "9.31.0",
+    "eslint-plugin-import": "2.32.0",
     "jest-resolve": "29.7.0",
     "jest-snapshot-serializer-raw": "2.0.0",
-    "prettier": "3.5.3",
-    "prettier-plugin-pkg": "0.19.1",
-    "prettier-plugin-sh": "0.17.4",
+    "prettier": "3.6.2",
+    "prettier-plugin-pkg": "0.21.2",
+    "prettier-plugin-sh": "0.18.0",
     "rimraf": "6.0.1",
     "typescript": "5.8.3",
-    "vitest": "3.2.1"
+    "vitest": "3.2.4"
   },
   "publishConfig": {
     "access": "public"
