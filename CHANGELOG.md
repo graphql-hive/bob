@@ -34,28 +34,24 @@
 - [#201](https://github.com/kamilkisiela/bob/pull/201)
   [`edf3301`](https://github.com/kamilkisiela/bob/commit/edf33014afa82c065ef4900ccbbc414cc864b1b4)
   Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Updated dependency [`execa@7.1.1` ↗︎](https://www.npmjs.com/package/execa/v/7.1.1) (from
     `6.1.0`, in `dependencies`)
 
 - [#229](https://github.com/kamilkisiela/bob/pull/229)
   [`2519f67`](https://github.com/kamilkisiela/bob/commit/2519f6784486d5451873f51940084773ff1dd768)
   Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Updated dependency [`typescript@^5.0.0` ↗︎](https://www.npmjs.com/package/typescript/v/4.7.4)
     (from `^4.7.4`, in `peerDependencies`)
 
 - [#244](https://github.com/kamilkisiela/bob/pull/244)
   [`f7b5824`](https://github.com/kamilkisiela/bob/commit/f7b58246e0aeb00f12b8238d30c986e00aa92891)
   Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Updated dependency [`consola@^3.0.0` ↗︎](https://www.npmjs.com/package/consola/v/3.0.0) (from
     `^2.15.3`, in `dependencies`)
 
 - [#247](https://github.com/kamilkisiela/bob/pull/247)
   [`0a5ff75`](https://github.com/kamilkisiela/bob/commit/0a5ff7507dfc6a569fc3721bc99db45330f46517)
   Thanks [@kamilkisiela](https://github.com/kamilkisiela)! - dependencies updates:
-
   - Removed dependency
     [`@vercel/ncc@^0.36.0` ↗︎](https://www.npmjs.com/package/@vercel/ncc/v/0.36.0) (from
     `dependencies`)
@@ -110,7 +106,6 @@
 - [#183](https://github.com/kamilkisiela/bob/pull/183)
   [`d6f981f`](https://github.com/kamilkisiela/bob/commit/d6f981f6d50608d4954c4a421b19b7cfe8f4b076)
   Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Updated dependency
     [`resolve.exports@^2.0.0` ↗︎](https://www.npmjs.com/package/resolve.exports/v/2.0.0) (from
     `^1.1.0`, in `dependencies`)
@@ -118,14 +113,12 @@
 - [#187](https://github.com/kamilkisiela/bob/pull/187)
   [`d7a8fd5`](https://github.com/kamilkisiela/bob/commit/d7a8fd54fb22973c3da426a0d907064b4b62ac40)
   Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Updated dependency [`mkdirp@^2.0.0` ↗︎](https://www.npmjs.com/package/mkdirp/v/2.0.0) (from
     `^1.0.4`, in `dependencies`)
 
 - [#188](https://github.com/kamilkisiela/bob/pull/188)
   [`4f9c7d4`](https://github.com/kamilkisiela/bob/commit/4f9c7d453911c252a813b084de5d183d994ae287)
   Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Updated dependency
     [`resolve.exports@^2.0.0` ↗︎](https://www.npmjs.com/package/resolve.exports/v/2.0.0) (from
     `^1.1.0`, in `dependencies`)
@@ -160,7 +153,6 @@
 - [#145](https://github.com/kamilkisiela/bob/pull/145)
   [`a4ebd65`](https://github.com/kamilkisiela/bob/commit/a4ebd655dd76c8703edb64605f0de2dd58870263)
   Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Updated dependency
     [`rollup-plugin-typescript2@^0.34.0` ↗︎](https://www.npmjs.com/package/rollup-plugin-typescript2/v/0.34.0)
     (from `^0.33.0`, in `dependencies`)
@@ -168,7 +160,6 @@
 - [#150](https://github.com/kamilkisiela/bob/pull/150)
   [`e18b500`](https://github.com/kamilkisiela/bob/commit/e18b500cc3807d7a76ad38639ef1cc59c1eab987)
   Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Updated dependency
     [`@vercel/ncc@^0.36.0` ↗︎](https://www.npmjs.com/package/@vercel/ncc/v/0.36.0) (from `^0.34.0`,
     in `dependencies`)
@@ -176,7 +167,6 @@
 - [#154](https://github.com/kamilkisiela/bob/pull/154)
   [`616e125`](https://github.com/kamilkisiela/bob/commit/616e1254ba3b3db638a2030abd244a50ff6ddb2b)
   Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Updated dependency
     [`@rollup/plugin-json@^6.0.0` ↗︎](https://www.npmjs.com/package/@rollup/plugin-json/v/6.0.0)
     (from `^4.1.0`, in `dependencies`)
@@ -202,7 +192,6 @@
 - [#151](https://github.com/kamilkisiela/bob/pull/151)
   [`4695d0b`](https://github.com/kamilkisiela/bob/commit/4695d0b4f1bf849d87f626f97445b9b9b5bb9cba)
   Thanks [@kamilkisiela](https://github.com/kamilkisiela)! - dependencies updates:
-
   - Updated dependency [`tsup@^6.5.0` ↗︎](https://www.npmjs.com/package/tsup/v/6.5.0) (from
     `^5.11.6`, in `dependencies`)
 
@@ -225,7 +214,6 @@
 - [#129](https://github.com/kamilkisiela/bob/pull/129)
   [`cd16844`](https://github.com/kamilkisiela/bob/commit/cd16844210db99a3e74fa95c3311fb644ad48594)
   Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Updated dependency
     [`rollup-plugin-typescript2@^0.33.0` ↗︎](https://www.npmjs.com/package/rollup-plugin-typescript2/v/null)
     (from `^0.32.1`, in `dependencies`)
