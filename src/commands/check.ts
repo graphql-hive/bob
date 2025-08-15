@@ -18,6 +18,7 @@ const ExportsMapEntry = zod.object({
 });
 
 const ExportsMapModel = zod.record(
+  zod.string(),
   zod.union([
     zod.string(),
     zod.object({
@@ -30,7 +31,7 @@ const ExportsMapModel = zod.record(
 
 const EnginesModel = zod.record(zod.string(), zod.string());
 
-const BinModel = zod.record(zod.string());
+const BinModel = zod.record(zod.string(), zod.string());
 
 export const checkCommand = createCommand<{}, {}>(api => {
   return {
@@ -129,9 +130,9 @@ async function checkExportsMapIntegrity(args: {
   if (exportsMapResult.success === false) {
     throw new Error(
       "Missing exports map within the 'package.json'.\n" +
-        exportsMapResult.error.message +
-        '\nCorrect Example:\n' +
-        JSON.stringify(presetFieldsDual.exports, null, 2),
+      exportsMapResult.error.message +
+      '\nCorrect Example:\n' +
+      JSON.stringify(presetFieldsDual.exports, null, 2),
     );
   }
 
@@ -192,9 +193,9 @@ async function checkExportsMapIntegrity(args: {
               if (result.exitCode !== 0) {
                 throw new Error(
                   `Require of file '${file}' failed.\n` +
-                    `In case this file is expected to raise an error please add an export to the 'bob.check.skip' field in your 'package.json' file.\n` +
-                    `Error:\n` +
-                    result.stderr,
+                  `In case this file is expected to raise an error please add an export to the 'bob.check.skip' field in your 'package.json' file.\n` +
+                  `Error:\n` +
+                  result.stderr,
                 );
               }
             }),
@@ -310,9 +311,9 @@ async function checkExportsMapIntegrity(args: {
       await fse.access(path.join(args.cwd, filePath), fse.constants.X_OK).catch(() => {
         throw new Error(
           "Binary file '" +
-            absoluteFilePath +
-            "' is not executable.\n" +
-            `Please set the executable bit e.g. by running 'chmod +x "${absoluteFilePath}"'.`,
+          absoluteFilePath +
+          "' is not executable.\n" +
+          `Please set the executable bit e.g. by running 'chmod +x "${absoluteFilePath}"'.`,
         );
       });
 
@@ -320,8 +321,8 @@ async function checkExportsMapIntegrity(args: {
       if (!contents.startsWith('#!/usr/bin/env node\n')) {
         throw new Error(
           "Binary file '" +
-            absoluteFilePath +
-            "' does not have a shebang.\n Please add '#!/usr/bin/env node' to the beginning of the file.",
+          absoluteFilePath +
+          "' does not have a shebang.\n Please add '#!/usr/bin/env node' to the beginning of the file.",
         );
       }
     }
