@@ -1,6 +1,6 @@
 {
   "name": "tsconfig-build-json",
-  "type": "commonjs",
+  "type": "module",
   "engines": {
     "node": ">= 14.0.0"
   },
