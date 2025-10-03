@@ -17,10 +17,12 @@ const BobConfigModel = zod.optional(
             zod.literal(false),
             zod.optional(
               zod.object({
-                copy: zod.optional(zod.array(zod.string()),/*  {
+                copy: zod.optional(
+                  zod.array(zod.string()) /*  {
                   description:
                     'Specify a list of files that should be copied the the output directory.',
-                } */),
+                } */,
+                ),
               }),
             ),
           ],
@@ -33,10 +35,12 @@ const BobConfigModel = zod.optional(
           zod.union([
             zod.literal(false),
             zod.object({
-              skip: zod.optional(zod.array(zod.string()), /* {
+              skip: zod.optional(
+                zod.array(zod.string()) /* {
                 description:
                   'Skip certain files from being checked. E.g. modules with side-effects.',
-              } */),
+              } */,
+              ),
             }),
           ]),
           /*           {
@@ -45,11 +49,11 @@ const BobConfigModel = zod.optional(
                     }, */
         ),
       }),
-    ],/* 
+    ] /* 
     {
       description:
         'Bob configuration. Set this value to false in order to disable running bob on this package.',
-    }, */
+    }, */,
   ),
 );
 
