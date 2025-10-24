@@ -13,7 +13,7 @@
     "url": "https://github.com/kamilkisiela"
   },
   "license": "MIT",
-  "packageManager": "pnpm@10.18.3",
+  "packageManager": "pnpm@10.19.0",
   "engines": {
     "node": ">=16",
     "pnpm": ">=8"
@@ -69,9 +69,9 @@
     "@types/fs-extra": "11.0.4",
     "@types/js-yaml": "4.0.9",
     "@types/lodash.get": "4.4.9",
-    "@types/node": "22.18.11",
-    "@types/yargs": "17.0.33",
-    "@typescript-eslint/parser": "8.46.1",
+    "@types/node": "22.18.12",
+    "@types/yargs": "17.0.34",
+    "@typescript-eslint/parser": "8.46.2",
     "cross-env": "10.1.0",
     "eslint": "9.38.0",
     "eslint-plugin-import": "2.32.0",
@@ -82,7 +82,7 @@
     "prettier-plugin-sh": "0.18.0",
     "rimraf": "6.0.1",
     "typescript": "5.9.3",
-    "vitest": "4.0.1"
+    "vitest": "4.0.3"
   },
   "publishConfig": {
     "access": "public"
