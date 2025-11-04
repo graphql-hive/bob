@@ -69,7 +69,7 @@
     "@types/fs-extra": "11.0.4",
     "@types/js-yaml": "4.0.9",
     "@types/lodash.get": "4.4.9",
-    "@types/node": "22.19.0",
+    "@types/node": "24.10.0",
     "@types/yargs": "17.0.34",
     "@typescript-eslint/parser": "8.46.3",
     "cross-env": "10.1.0",
