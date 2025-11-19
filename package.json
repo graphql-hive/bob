@@ -86,5 +86,10 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "pnpm": {
+    "overrides": {
+      "glob": "11.1.0"
+    }
   }
 }
