@@ -1,5 +1,101 @@
 # Changelog
 
+## 8.0.0
+
+### Major Changes
+
+- [#339](https://github.com/graphql-hive/bob/pull/339)
+  [`f6be910`](https://github.com/graphql-hive/bob/commit/f6be91029ba6dbe76f5f268bdefa9cb48494a0b6)
+  Thanks [@enisdenjo](https://github.com/enisdenjo)! - Drop "module" package.json field
+
+  The field was just a proposal and was never officially (and fully) defined by Node. Node instead
+  uses (and recommends) the ["exports" field](https://nodejs.org/api/packages.html#exports).
+
+- [#339](https://github.com/graphql-hive/bob/pull/339)
+  [`f6be910`](https://github.com/graphql-hive/bob/commit/f6be91029ba6dbe76f5f268bdefa9cb48494a0b6)
+  Thanks [@enisdenjo](https://github.com/enisdenjo)! - Drop "typescript" package.json field
+
+- [#336](https://github.com/graphql-hive/bob/pull/336)
+  [`407c0be`](https://github.com/graphql-hive/bob/commit/407c0be856df6ef463e2c6dab729e413c180648d)
+  Thanks [@enisdenjo](https://github.com/enisdenjo)! - Build modern CommonJS and support
+  package.json exports
+
+- [#339](https://github.com/graphql-hive/bob/pull/339)
+  [`f6be910`](https://github.com/graphql-hive/bob/commit/f6be91029ba6dbe76f5f268bdefa9cb48494a0b6)
+  Thanks [@enisdenjo](https://github.com/enisdenjo)! - "main" package.json field matches the
+  location of "type" output
+
+  > The "type" field defines the module format that Node.js uses for all .js files that have that
+  > package.json file as their nearest parent.
+  >
+  > Files ending with .js are loaded as ES modules when the nearest parent package.json file
+  > contains a top-level field "type" with a value of "module".
+  >
+  > If the nearest parent package.json lacks a "type" field, or contains "type": "commonjs", .js
+  > files are treated as CommonJS. If the volume root is reached and no package.json is found, .js
+  > files are treated as CommonJS.
+
+  _[Node documentation](https://nodejs.org/api/packages.html#type)_
+
+### Patch Changes
+
+- [#299](https://github.com/graphql-hive/bob/pull/299)
+  [`380347f`](https://github.com/graphql-hive/bob/commit/380347ffe6bfa1ec6150c6d5db830ec789e30cbc)
+  Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
+  - Updated dependency [`globby@^14.0.0` ↗︎](https://www.npmjs.com/package/globby/v/14.0.0) (from
+    `^13.1.3`, in `dependencies`)
+
+- [#320](https://github.com/graphql-hive/bob/pull/320)
+  [`e20635c`](https://github.com/graphql-hive/bob/commit/e20635c66b9f52fcfe93e3738ab4d346ae3eae8d)
+  Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
+  - Updated dependency [`execa@^7.2.0` ↗︎](https://www.npmjs.com/package/execa/v/7.2.0) (from
+    `7.1.1`, in `dependencies`)
+
+- [`ea8df64`](https://github.com/graphql-hive/bob/commit/ea8df64b4c251b446d5a7d8b3a5e8a678e8ea1bb)
+  Thanks [@renovate[bot]](https://github.com/renovate%5Bbot%5D)! - dependencies updates:
+  - Updated dependency [`execa@^9.0.0` ↗︎](https://www.npmjs.com/package/execa/v/9.0.0) (from
+    `^7.2.0`, in `dependencies`)
+
+- [#324](https://github.com/graphql-hive/bob/pull/324)
+  [`9d3424f`](https://github.com/graphql-hive/bob/commit/9d3424fa1d46c0211165faa51fe81cab480a5a92)
+  Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
+  - Updated dependency [`p-limit@^6.0.0` ↗︎](https://www.npmjs.com/package/p-limit/v/6.0.0) (from
+    `^4.0.0`, in `dependencies`)
+
+- [#336](https://github.com/graphql-hive/bob/pull/336)
+  [`407c0be`](https://github.com/graphql-hive/bob/commit/407c0be856df6ef463e2c6dab729e413c180648d)
+  Thanks [@enisdenjo](https://github.com/enisdenjo)! - dependencies updates:
+  - Added dependency [`get-tsconfig@^4.8.1` ↗︎](https://www.npmjs.com/package/get-tsconfig/v/4.8.1)
+    (to `dependencies`)
+
+- [#411](https://github.com/graphql-hive/bob/pull/411)
+  [`a07c114`](https://github.com/graphql-hive/bob/commit/a07c114d941d25afec04e509ddf1df4dbff4a15c)
+  Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
+  - Updated dependency [`yargs@^18.0.0` ↗︎](https://www.npmjs.com/package/yargs/v/18.0.0) (from
+    `^17.6.2`, in `dependencies`)
+
+- [#416](https://github.com/graphql-hive/bob/pull/416)
+  [`fa958eb`](https://github.com/graphql-hive/bob/commit/fa958eb2c40ae96d3920e4efa45c12608108fbc7)
+  Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
+  - Updated dependency [`zod@^4.0.0` ↗︎](https://www.npmjs.com/package/zod/v/4.0.0) (from
+    `^3.20.2`, in `dependencies`)
+
+- [#423](https://github.com/graphql-hive/bob/pull/423)
+  [`e54781a`](https://github.com/graphql-hive/bob/commit/e54781a5e3d26e53cf07af984d35370ae0d1d241)
+  Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
+  - Updated dependency [`p-limit@^7.0.0` ↗︎](https://www.npmjs.com/package/p-limit/v/7.0.0) (from
+    `^6.0.0`, in `dependencies`)
+
+- [#438](https://github.com/graphql-hive/bob/pull/438)
+  [`9b2b66c`](https://github.com/graphql-hive/bob/commit/9b2b66ccb70c15fc4afc125bac5bbcbf5d656740)
+  Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
+  - Updated dependency [`globby@^16.0.0` ↗︎](https://www.npmjs.com/package/globby/v/16.0.0) (from
+    `^14.0.0`, in `dependencies`)
+
+- [#266](https://github.com/graphql-hive/bob/pull/266)
+  [`6eab363`](https://github.com/graphql-hive/bob/commit/6eab3631dbb71b7e10579316da373e74a13099b5)
+  Thanks [@enisdenjo](https://github.com/enisdenjo)! - Check whether package exports map files exist
+
 ## 7.0.1
 
 ### Patch Changes
